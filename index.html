@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Learning JavaScript</title>
+</head>
+
+<body>
+    <h1>Learning JavaScript</h1>
+    <h2 id="para"><b>This is a paragraph</b></h2>
+
+    <!-- <button onclick="document.getElementById('para').innerHTML = '<b>This is a paragraph.</b>'">Register</button> -->
+    <button onclick="document.write('<h1>Write the code.</h1><button>Click me</button>')">Write</button>
+    <button onclick="window.print()">Print me!</button>
+
+    <div>
+        <h1 style="text-align: center;">Changing the src attribute</h1>
+        <button onclick="document.getElementById('bulbImage').src='images/pic_bulbon.gif'">Turn on the light</button>
+        <button onclick="document.getElementById('bulbImage').src='images/pic_bulboff.gif'">Turn off the light</button>
+        <button onclick="document.getElementById('bulbImage').style.display = 'none'">Hide the image</button>
+        <img id="bulbImage" alt="">
+        <button onclick="print()">Print</button>
+        <button onclick="alert('This is a alert box')">Alert String</button>
+        <button onclick="alert('123456')">Alert Numbers</button>
+        <button onclick="alert('Learning JavaScript')">Click</button>
+        <p>The calculation of b * a = <span id="calc"></span></p>
+    </div>
+    <script>
+        // alert("This is a alert message")
+        // alert("This is another alert message")
+        // document.write("This text is written in the document write function")
+        console.log("This text is written in the console log")
+        // alert("Code executed")
+
+        let a, b, c;
+        // a = 2
+        a = 5; b = 10; c = b * a;
+
+        var x = 5;
+        var y = 6;
+        console.log(y * x)
+        document.getElementById("calc").innerHTML = c;
+    </script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

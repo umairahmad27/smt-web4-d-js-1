@@ -1,0 +1,1 @@
+document.getElementById("para").innerHTML = "<b>This is a paragraph.</b>"
